@@ -147,6 +147,12 @@ document.addEventListener("click", (e) => {
   if (targetEl.classList.contains("remove-todo")) {
     parentEl.remove();
 
+    if (targetEl.classList.contains("remove-todo")) {
+      parentEl.remove();
+
+      // Utilizando dados da localStorage
+      removeTodoLocalStorage(todoTitle);
+    }
     // Utilizando dados da localStorage
     removeTodoLocalStorage(todoTitle);
   }
